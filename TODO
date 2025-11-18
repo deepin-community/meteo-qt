@@ -1,0 +1,2 @@
+- Think for the log file issue #49 (maybe systemd journal is better solution ?)
+- Selection of info to show in the noitification tooltip

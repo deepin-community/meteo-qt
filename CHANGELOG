@@ -1,0 +1,303 @@
+4.2
+- Fix crash with only temperature on tray by @alexzk1
+
+4.1
+- Fix setup by @papoteur-mga
+
+4.0
+- Port to QT6 by @hydrargyrum
+
+3.4
+- Fix weather alerts
+- Export weather info in the log file to use with Conky #137
+- Translations support from Weblate by @stefonarch
+
+3.3
+- Handle '401 Unauthorized' keys for onecall api (used for weather alerts)
+
+3.2
+- Air Quality Index
+- Option to define the initialization icon size and the position for the temperature in the icon - by kreddkrikk #127
+
+3.1
+- Font dialog to set the font of the T° in the system tray
+- Update German translation by psyca
+- Update French translation
+
+3.0
+- Notification for tomorrow weather status
+
+2.4
+- Visibility (distance) in current day weather data
+- Add Romanian translation by adisah
+
+2.3
+- Fix crash: Change from precipitation type to precipitation probability
+- Point to the current color when openning the dialog to choose the font
+  color for the T° of the tray icon
+
+
+2.2
+- Add Weather Alerts support (source: https://openweathermap.org/api/push-weather-alerts#listsource)
+Translations:
+    Update Russian translation by Alexey Zakaldaev
+    Update Hungarian translation by thelacesz
+    Update Japanese translation by Masamichi Ito
+    Update Slovak translation by jose1711
+    Update German translation by psyca
+
+2.1
+- Option to choose the icons theme among the installed themes (further to issue #96)
+- Use plain text in tray tooltip - fixes #103
+- Translations update:
+    Update Dutch translation
+    Update Greek translation
+    Update Ukrainian translation
+    Update Czech translation
+
+2.0.1
+- add missing application icon
+
+2.0
+- Use system theme icons for the application
+- Update Polish translation
+- Update German translation
+
+1.9
+- Add dew point and comfort level information
+- Fix clouds description in tooltips
+- Fix displaying data with Kelvin unit
+- Add 'unity' in DE without left click
+- Provide a default key.
+
+1.8
+- Autocompletion in city search
+- Update Slovak translation by jose1711
+- Update Russian translation by Alexey Zakaldaev
+
+1.7
+- Option to toggle tray icon/temperature
+Translations:
+    Update Czech translation (Jiri Podhorecky)
+
+1.6.1
+- Add missing icon (fog night) for the system theme icons
+
+1.6
+- Show the Feel Like T°
+- Option to show the Feels Like T° in the tray icon
+- Option to use icons from the system theme
+- Translations updates:
+    Czech by trendspotter
+    Ukranian by Yuri Chornoivan
+    Dutch by Heimen Stoffels
+    German by Jürgen
+
+1.5
+- Add the Feels like temperature in weather information
+- Option to show the Feels like T° on the system tray icon
+- Add Humidity and Pressure info in the current day forecast tooltip
+- Option to choose the logging level from gui
+- Remember the default city from settings and show the weather info of this city at startup
+- Improve performance and memory usage
+- Search city by ID
+
+1.4
+- Reduce weather condition font size to avoid layout breakage
+- Option to set the wind speed in 'km/h'
+- Fix crash when the Sunrise/Sunset time is not provided
+- Updated translations:
+    Czech trendspotter
+    Dutch Heimen Stoffels
+    Greek
+    Ukrainian Yuri Chornoivan
+
+1.3
+Fix crash when the wind direction is not available
+
+1.2
+Bump version
+
+1.1
+- Option to show the window at start-up
+- Fixes for crashes
+- Show wind info when Bft unit option is unchecked
+- Use unicode arrows for hPa and T° trend
+- Wrap weather information of the day on panel
+- Update translations [German, Slovak, Czech]
+
+1.0.0
+- Automatic detection of the geolocation
+- Reenable UV Ozone in weather information
+- Toggle cities with the mouse wheel from the weather information window
+- Show the coordinates in search city results
+- Fix crash when network connection is not available
+- Keep the log file size upto 10mb
+- Fix city not saved in cities list if set as default when adding it
+- Don't apply any text format so the desktop environment colour scheme is applied (eg by qt5ct)
+- Add progress gauge in the overview window when changing the city
+- Remember temperature trend for the city
+- If the 7 days forcast is not avaimabe (with a free license key) provide the 4 days forcast
+- Fix crash at first startup after configuring a city and press enter
+- Fix translation of wind when changing city
+- Use different arrow for notifier as in some systems is displayed as a square
+- Update Dutch translation - Vistaus
+- Update Ukrainian translation - yurchor
+- Update German translation - psyca
+- Update Czech translation - fri
+- Update Spanish translation - vania182004
+- Update Russian translation -  liliya.panova13579
+
+0.9.9
+- Use the weather panel as central widget
+- Better memory usage
+- Fixes #65
+- Possible fix for #44 (as now there is no any Qt dialog destroy case)
+- The dialog has an entry in the windows manager (LXQt)
+
+0.9.8
+- Fix crash when Pressure value is float number (patch from Reinhard Karcher)
+
+0.9.7
+- Fix stop working with message 'Fix error '401 Invalid API key'
+  since the 6 days forecast is provided only with the paid service
+  Now the days forcast is limited to 4 days
+
+0.9.6
+- Dailight duration
+- Show UV / Ozone only if available
+- Add option for Beaufort wind speed unit
+- Show the T° and hPa trend
+
+0.9.5
+Feature of cities translation
+Add open window action in tray menu (for Unity)
+Improvements finding weather data
+Fixes some issues with crashes
+
+0.9.4
+Use a personal key to access the openweathemap api
+Each user has to create his own key
+
+0.9.3
+Fix crash with new profile - issue #54
+
+0.9.2
+Proxy connection
+Ozone data
+Add more weather info in next days forecast tooltips
+
+0.9.1
+Fix crash on new user profile
+Fix translation messages string
+
+0.9.0
+Fix crash when dialogue is closed by its button
+Search continuously for a connexion or data if a problem has occurred
+Add wind direction icon
+Add option to display the temperature with decimal in tray icon
+Add Precipitation value
+Update Czech translation by fri
+Update Polish translation by FadeMind
+
+0.8.8
+Improve the tray icon (bigger weather icon, temperature alignment)
+Don't wait the UV information to display the weather informations dialogue
+Update Spanish translation (codeshard)
+Update Greman translation (psyca)
+Update Czech translation (fri)
+Update Polish translation (napcok)
+Update Ukranian translation (yurchor)
+
+0.8.7
+Update Ukranian translation (yurchor)
+Update German translation (psyca)
+Update Greek translation
+
+0.8.6
+Fix not display data when missing UV info
+
+0.8.5
+Add UV informations
+
+0.8.4
+Fix crash at startup in a fresh installation
+
+0.8.3
+Update French translation
+Update Polish translation
+Cloudiness description in one line
+
+0.8.2
+Fix error message: <401 Unauthorized> blocking the city search
+Fix not finding city names with blank space
+
+0.8.1
+Fix error message: <401 Unauthorized> blocking fetching the weather data
+
+0.8.0
+Add option to choose the tray icon type as icon, icon & temperature or only temperature
+
+0.7.1
+fix crash when logging folder is missing (at first time)
+
+0.7.0
+fix crash due invalid wind data
+logging
+tooltip with the date in days forecast
+Improve fuzzy search in utf-8
+Fix memory leak after multiple opens of the dialogue
+loading tray animated icon
+
+0.6.0
+- Search city by typing
+- Handling timeout in weather informations download
+- Improve errors handling
+- Notification in weather update
+- Remember window position in search city dialog
+- Add support for Transifex translation platform
+- Polish translation thanks to napcok
+- Russian translation thanks to skybon
+- Turkish translation thanks to tarakbumba
+- French translation thanks to sunflowers
+- Chinese (Taiwan) translation thanks to yochenhsieh
+- German translation thanks to psyca
+- Ukranian translation thanks to yurchor
+
+0.5.0
+Forecast for the next 18 hours
+Refresh cities list in submenu after a modification
+
+0.4.3
+Add Spanish translation
+
+0.4.2
+Fix bug to access the settings dialogue when updating from a previous version
+
+0.4.1
+Fixes in cities list handling
+
+0.4.0
+Add support for multiple locations
+
+0.3.4
+Fix not displaying correctly the city name, if the name contains hyphens.
+
+0.3.3
+fixes in settings and error handling
+Search city by substring in order to have more results
+Memorize the window's position
+
+0.3.1
+Fix autostart in lxqt (wait for tray)
+Update translations for de, uk
+Improve error/invalid data handling
+Add option to choose the font color in the tray
+
+0.2.0
+Port to Qt5
+Wind unit setting (m/s - mph)
+
+0.1.0
+Initial release
+

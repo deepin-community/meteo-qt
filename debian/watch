@@ -1,0 +1,4 @@
+version=3
+opts=filenamemangle=s/.+\/v(\d\S*)\.tar\.gz/meteo-qt_$1\.tar\.gz/ \
+https://github.com/dglent/meteo-qt/tags .*/v(\d\S*)\.tar\.gz
+

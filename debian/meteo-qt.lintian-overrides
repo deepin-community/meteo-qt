@@ -1,0 +1,4 @@
+# right, there will be no manpage in a near future
+meteo-qt: no-manual-page [*]
+# right, the good old XDG lightspeed
+meteo-qt: desktop-entry-invalid-category LXQt *

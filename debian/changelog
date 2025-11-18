@@ -1,5 +1,139 @@
-template-repository (1.0-1) unstable; urgency=medium
+meteo-qt (4.2-2) unstable; urgency=medium
 
-  * Initial release
+  [ Macy Lin ]
+  * debian/control: remove python3-pyqt5 from depends. (Closed: #1102684)
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Andrew Lee (李健秋) <ajqlee@debian.org>  Sat, 12 Apr 2025 13:38:34 +0200
+
+meteo-qt (4.2-1) unstable; urgency=medium
+
+  [ Macy Lin ]
+  * New upstream version 4.1.
+  * debian/copyright: added myself.
+  * debian/control: build-deps on pyqt5-dev-tools -> pyqt6-dev-tools.
+  * debian/control: build-deps on qt5-qmake -> qmake6.
+  * debian/control: build-deps on qtbase5-dev -> qt6-base-dev.
+  * debian/control: build-deps on qttools5-dev -> qt6-tools-dev.
+  * debian/control: build-deps on qttools5-dev-tools ->
+    qt6-tools-dev-tools.
+  * debian/rules: export QT_SELECT 5 -> 6.
+  * debian/control: build-deps on qt6-l10n-tools.
+  * debian/patches/lrelease-pro-qt6.patch: add.
+  * debian/control: build-deps on qtchooser.
+  * debian/control: build-deps on qt6-base-dev-tools.
+  * Releasing debian version 4.1-1.
+
+  [ Andrew Lee (李健秋) ]
+  * New upstream version 4.2.
+  * debian/patches/lrelease-pro-qt6.patch: fix path.
+  * debian/copyright: update.
+  * debian/control: clean up build-deps.
+
+ -- Andrew Lee (李健秋) <ajqlee@debian.org>  Thu, 10 Apr 2025 13:52:36 +0200
+
+meteo-qt (3.4-1) unstable; urgency=medium
+
+  * New upstream version 3.4
+  * Clean up of group membership after 2nd calls.
+  * debian/control: bump to Standards-version to 4.7.0, no changes needed.
+  * debian/control: drop specific versioning in package description.
+  * debian/copyright: update.
+
+ -- Andrew Lee (李健秋) <ajqlee@debian.org>  Fri, 04 Oct 2024 15:31:21 +0200
+
+meteo-qt (3.3-2.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Remove unused python3-sip dependency (closes: #1060724).
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Sun, 31 Mar 2024 22:30:48 +0300
+
+meteo-qt (3.3-2) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Update lintian override info format in d/meteo-qt.lintian-overrides
+    on line 2.
+  * Set upstream metadata fields: Repository.
+  * Remove obsolete field Name from debian/upstream/metadata (already
+    present in machine-readable debian/copyright).
+  * Update standards version to 4.6.2, no changes needed.
+
+  [ Andrew Lee (李健秋) ]
+  * debian/control: update team address.
+  * debian/control: add myself as uploader.
+  * debian/copyright: update
+  * debian/rules: clean files created during the build.
+    (Closes: #1048431)
+  * debian/salsa-ci.yml: added.
+
+ -- Andrew Lee (李健秋) <ajqlee@debian.org>  Wed, 06 Sep 2023 14:43:13 +0200
+
+meteo-qt (3.3-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- ChangZhuo Chen (陳昌倬) <czchen@debian.org>  Thu, 05 Jan 2023 13:40:22 +0800
+
+meteo-qt (3.2-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Remove unnecessary -Wl,--as-needed in d/rules
+  * Remove unnecessary --fail-missing in d/rules
+  * Add Rules-Requires-Root: no.
+  * Update d/meteo-qt.lintian-overrides.
+  * Add ChangZhuo Chen (陳昌倬) as Uploaders.
+  * Update d/copyright
+
+ -- ChangZhuo Chen (陳昌倬) <czchen@debian.org>  Sun, 18 Dec 2022 23:05:31 +0800
+
+meteo-qt (2.1-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 2.1. (Closes: #960451)
+  * debian/control:
+    - Use debhelper 13
+    - Bump Standards-Version to 4.5.1
+    - Remove X-Python3-Version
+
+ -- Yao Wei (魏銘廷) <mwei@debian.org>  Thu, 07 Jan 2021 22:08:56 +0800
+
+meteo-qt (1.5-1) unstable; urgency=medium
+
+  * New upstream version 1.5
+
+ -- Alf Gaida <agaida@siduction.org>  Sat, 04 Jan 2020 14:05:00 +0100
+
+meteo-qt (1.4-1) unstable; urgency=medium
+
+  * New upstream version 1.4
+  * Fixed watch file - no duplicated orig files anymore
+  * [PATCH] Fix crash when missing the current weather icon value in xml
+  * Bumped Standards to 4.4.1, no changes needed
+
+ -- Alf Gaida <agaida@siduction.org>  Sun, 22 Dec 2019 19:38:07 +0100
+
+meteo-qt (1.3-1) unstable; urgency=medium
+
+  * Update to upstream version '1.3'
+  * Switched from debhelper to debhelper-compat
+  * Bumped copyright years
+  * Bumped Standards-Version to 4.4.0, no changes needed
+  * Added gbp.conf - switched to gbp
+
+ -- Alf Gaida <agaida@siduction.org>  Sun, 25 Aug 2019 00:53:45 +0200
+
+meteo-qt (1.0.0-1) unstable; urgency=medium
+
+  * Cherry-picking upstream version 1.0.0.
+  * Bumped Standards to 4.3.0, no changes needed
+  * Bumped compat to 12, no changes needed
+  * Bumped debhelper build dependency to 12~, no changes needed
+  * Fixed meteo-qt.install
+
+ -- Alf Gaida <agaida@siduction.org>  Sat, 19 Jan 2019 13:09:30 +0100
+
+meteo-qt (0.9.9-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #825851)
+
+ -- Alf Gaida <agaida@siduction.org>  Sat, 25 Aug 2018 16:04:07 +0200
