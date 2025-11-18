@@ -1,0 +1,17 @@
+Description: pacth setup.py manually for lrelease-pro-qt6
+ Specify lrelease-pro qt6 path. Patch setup.py manually.
+Author: Macy Lin <macy@debconf.org>
+Origin: debian
+Last-Update: 2025-04-10
+
+--- meteo-qt-4.1.orig/setup.py
++++ meteo-qt-4.1/setup.py
+@@ -18,7 +18,7 @@ class BuildQm(build):
+             return pyproject_files
+ 
+     subprocess.run(["pylupdate6"] + extract_py_sources() + ["-ts", "meteo_qt/translations/meteo-qt_en.ts"])
+-    subprocess.run(["lrelease-pro-qt6", "meteo_qt/meteo_qt.pro"])
++    subprocess.run(["/usr/lib/qt6/libexec/lrelease-pro", "meteo_qt/meteo_qt.pro"])
+ 
+ 
+ PROJECT_PATH = Path(__file__).parent

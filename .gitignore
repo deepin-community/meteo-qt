@@ -1,0 +1,6 @@
+*.qm
+*.pyc
+*~
+__pycache__/
+.directory
+build/
